@@ -1,5 +1,5 @@
 # esp-idf-x9c103
-Digitally Controlled Potentiometer driver for ESP-IDF.
+Three-Wire Digitally Controlled Potentiometer driver for ESP-IDF.
 
 ESP32 has two 8-bit DAC (digital to analog converter) channels, connected to GPIO25 (Channel 1) and GPIO26 (Channel 2).   
 However, the maximum voltage is up to VDD.   
