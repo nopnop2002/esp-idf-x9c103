@@ -10,6 +10,7 @@ If you control a voltage up to 5V, you can use this.
 - X9C503 = 50kOhms   
 - X9C104 = 100kOhms   
 
+I ported from [here](https://github.com/lucyamy/LapX9C10X).   
 
 # Installation for ESP32
 

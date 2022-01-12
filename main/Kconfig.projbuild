@@ -20,14 +20,14 @@ menu "Application Configuration"
       bool "X9C103"
       help
         X9C103(10K)
+    config MODEL_X9C503
+      bool "X9C503"
+      help
+        X9C503(50K)
     config MODEL_X9C104
       bool "X9C104"
       help
-        X9C104(50K)
-    config MODEL_X9C105
-      bool "X9C105"
-      help
-        X9C105(100K)
+        X9C104(100K)
   endchoice
 
 	config INCREMENT_GPIO
