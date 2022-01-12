@@ -55,13 +55,16 @@ idf.py flash
 |:-:|:-:|:-:|:-:|:-:|:-:|
 ||INC|--|GPIO33|GPIO38|GPIO3|
 ||U/D|--|GPIO32|GPIO33|GPIO4|
-|Wiper terminals|Vh/Rh|--||||
+|High terminals|Vh/Rh|--||||
 ||Vss|--|GND|GND|GND|
-|Low terminals|Vw/Rw|--||||
+|Wiper terminals|Vw/Rw|--||||
 |Low terminals|Vl/Rl|--||||
 ||CS|--|GPIO5|GPIO34|GPIO5|
 ||Vcc|--|5V|5V|5V|
 
 __You can change it to any pin using menuconfig.__   
+
+
+If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V will be output to the Wiper terminals.   
 
 
