@@ -1,0 +1,66 @@
+menu "Application Configuration"
+
+	config GPIO_RANGE_MAX
+		int
+		default 33 if IDF_TARGET_ESP32
+		default 46 if IDF_TARGET_ESP32S2
+		default 19 if IDF_TARGET_ESP32C3
+		default 48 if IDF_TARGET_ESP32S3
+
+  choice MODEL
+    prompt "Model"
+    default MODEL_X9C103
+    help
+      Select model.
+    config MODEL_X9C102
+      bool "X9C102"
+      help
+        X9C102(1K)
+    config MODEL_X9C103
+      bool "X9C103"
+      help
+        X9C103(10K)
+    config MODEL_X9C104
+      bool "X9C104"
+      help
+        X9C104(50K)
+    config MODEL_X9C105
+      bool "X9C105"
+      help
+        X9C105(100K)
+  endchoice
+
+	config INCREMENT_GPIO
+		int "GPIO number (IOxx) to increment"
+		range 0 GPIO_RANGE_MAX
+		default 33 if IDF_TARGET_ESP32
+		default 38 if IDF_TARGET_ESP32S2
+		default 3  if IDF_TARGET_ESP32C3
+		help
+			GPIO number (IOxx) to increment.
+			Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to DC.
+			GPIOs 35-39 are input-only so cannot be used as outputs.
+
+  config UPDOWN_GPIO
+    int "GPIO number (IOxx) to upDown"
+    range 0 GPIO_RANGE_MAX
+		default 32 if IDF_TARGET_ESP32
+		default 33 if IDF_TARGET_ESP32S2
+		default 4  if IDF_TARGET_ESP32C3
+    help
+      GPIO number (IOxx) to upDown.
+      Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to DC.
+      GPIOs 35-39 are input-only so cannot be used as outputs.
+
+  config DEVICE_SELECT_GPIO
+    int "GPIO number (IOxx) to device select"
+    range 0 GPIO_RANGE_MAX
+		default 5  if IDF_TARGET_ESP32
+		default 34 if IDF_TARGET_ESP32S2
+		default 5  if IDF_TARGET_ESP32C3
+    help
+      GPIO number (IOxx) to device select.
+      Some GPIOs are used for other purposes (flash connections, etc.) and cannot be used to DC.
+      GPIOs 35-39 are input-only so cannot be used as outputs.
+
+endmenu
