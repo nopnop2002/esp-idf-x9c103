@@ -64,7 +64,6 @@ idf.py flash
 
 __You can change it to any pin using menuconfig.__   
 
-
-If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V will be output to the Wiper terminals.   
+If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V is output to Wiper terminals in 99 steps.   
 
 
