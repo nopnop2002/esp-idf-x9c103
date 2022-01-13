@@ -6,7 +6,7 @@ However, the maximum voltage is up to VDD.
 If you control a voltage up to 5V, you can use this.   
 
 - X9C102 = 1kOhms   
-- X9C103 = 10Ohms   
+- X9C103 = 10kOhms   
 - X9C503 = 50kOhms   
 - X9C104 = 100kOhms   
 
