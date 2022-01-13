@@ -68,3 +68,6 @@ __You can change it to any pin using menuconfig.__
 If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V is output to Wiper terminals in 99 steps.   
 
 
+# API
+See [here](https://github.com/lucyamy/LapX9C10X).
+
