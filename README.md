@@ -12,36 +12,15 @@ If you control a voltage up to 5V, you can use this.
 
 I ported from [here](https://github.com/lucyamy/LapX9C10X).   
 
-# Installation for ESP32
+# Installation
 
 ```Shell
 git clone https://github.com/nopnop2002/esp-idf-x9c103
 cd esp-idf-x9c103
-idf.py set-target esp32
+idf.py set-target {esp32/esp32s2/esp32c3}
 idf.py menuconfig
 idf.py flash
 ```
-
-# Installation for ESP32-S2
-
-```Shell
-git clone https://github.com/nopnop2002/esp-idf-x9c103
-cd esp-idf-x9c103
-idf.py set-target esp32s2
-idf.py menuconfig
-idf.py flash
-```
-
-# Installation for ESP32-C3
-
-```Shell
-git clone https://github.com/nopnop2002/esp-idf-x9c103
-cd esp-idf-x9c103
-idf.py set-target esp32c3
-idf.py menuconfig
-idf.py flash
-```
-
 
 # Configuration   
 
@@ -70,4 +49,7 @@ If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V is output
 
 # API
 See [here](https://github.com/lucyamy/LapX9C10X).
+
+# Reference
+https://github.com/nopnop2002/esp-idf-mcp41010
 
