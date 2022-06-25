@@ -9,7 +9,7 @@
 #define HIGH 1
 #define LOW  0
 
-#define delayMicroseconds(microsec) ets_delay_us(microsec)
+#define delayMicroseconds(microsec) esp_rom_delay_us(microsec)
 #define delay(millsec) ets_delay_us(millsec*1000)
 
 typedef struct {

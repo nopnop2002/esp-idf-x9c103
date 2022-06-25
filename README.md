@@ -5,7 +5,7 @@ ESP32 has two 8-bit DAC (digital to analog converter) channels, connected to GPI
 However, the maximum voltage is up to VDD.   
 If you control a voltage up to 5V, you can use this.   
 
-And ESP32C3 core does not have a DAC function.   
+And ESP32Sx/ESP32Cx core does not have a DAC function.   
 
 - X9C102 = 1kOhms   
 - X9C103 = 10kOhms   
@@ -19,7 +19,7 @@ I ported from [here](https://github.com/lucyamy/LapX9C10X).
 ```Shell
 git clone https://github.com/nopnop2002/esp-idf-x9c103
 cd esp-idf-x9c103
-idf.py set-target {esp32/esp32s2/esp32c3}
+idf.py set-target {esp32/esp32s2/esp32s3/esp32c3}
 idf.py menuconfig
 idf.py flash
 ```
@@ -33,7 +33,7 @@ idf.py flash
 
 # Wirering
 
-|Circuit|X9C||ESP32|ESP32-S2|ESP32-C3|
+|Circuit|X9C||ESP32|ESP32-S2/S3|ESP32-C3|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 ||INC|--|GPIO33|GPIO38|GPIO3|
 ||U/D|--|GPIO32|GPIO33|GPIO4|
