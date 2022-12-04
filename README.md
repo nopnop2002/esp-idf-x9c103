@@ -50,7 +50,7 @@ If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V is output
 
 # Typical circuit
 
-![ESP32-x9c103](https://user-images.githubusercontent.com/6020549/205483067-03f313f2-dfbb-48a1-b7ca-3727f4bbcf13.jpg)
+![ESP32-x9c103](https://user-images.githubusercontent.com/6020549/205483596-b26952e4-19c1-4990-aa23-13f35d54abf8.jpg)
 
 
 
