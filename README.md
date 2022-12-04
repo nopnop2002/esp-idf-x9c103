@@ -48,6 +48,11 @@ __You can change it to any pin using menuconfig.__
 
 If you connect to Low terminals = Gnd and High terminals = 5V, 0 to 5V is output to Wiper terminals in 99 steps.   
 
+# Typical circuit
+
+![ESP32-x9c103](https://user-images.githubusercontent.com/6020549/205483067-03f313f2-dfbb-48a1-b7ca-3727f4bbcf13.jpg)
+
+
 
 # API
 See [here](https://github.com/lucyamy/LapX9C10X).
