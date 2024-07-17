@@ -9,7 +9,7 @@
 
 #include "x9c103.h"
 
-#define TAG "MAIN"
+static const char *TAG = "MAIN";
 
 void app_main()
 {

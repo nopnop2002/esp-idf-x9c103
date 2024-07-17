@@ -19,7 +19,6 @@ I ported from [here](https://github.com/lucyamy/LapX9C10X).
 ```Shell
 git clone https://github.com/nopnop2002/esp-idf-x9c103
 cd esp-idf-x9c103
-idf.py set-target {esp32/esp32s2/esp32s3/esp32c3}
 idf.py menuconfig
 idf.py flash
 ```
@@ -33,7 +32,7 @@ idf.py flash
 
 # Wirering
 
-|Circuit|X9C||ESP32|ESP32-S2/S3|ESP32-C3|
+|Circuit|X9C||ESP32|ESP32-S2/S3|ESP32-C2/C3/C6/H2|
 |:-:|:-:|:-:|:-:|:-:|:-:|
 ||INC|--|GPIO33|GPIO38|GPIO3|
 ||U/D|--|GPIO32|GPIO33|GPIO4|
