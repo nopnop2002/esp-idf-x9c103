@@ -31,7 +31,7 @@ idf.py flash
 ![config-x9c103-2](https://user-images.githubusercontent.com/6020549/149048774-ac062afb-dd17-48fe-b419-24c1838a12be.jpg)
 
 
-# Wirering
+# Wiring
 
 |Circuit|X9C||ESP32|ESP32-S2/S3|ESP32-C2/C3/C6/H2|
 |:-:|:-:|:-:|:-:|:-:|:-:|
